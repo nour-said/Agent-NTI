@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    .stApp { background-color: #f5edd8; }
+    .stApp { background-color: #000000; }
     .agent-badge {
         display: inline-block;
         padding: 4px 12px;
@@ -28,34 +28,6 @@ st.title("📖 Story Teller")
 st.caption("Multi-Agent System · LangGraph + Ollama")
 
 st.markdown("---")
-
-with st.sidebar:
-    st.markdown("### Agent Pipeline")
-    st.markdown("""
-```
-       START
-         │
-    ┌────▼────┐
-    │  ORCH   │  ← crafts directive
-    └────┬────┘
-         │
-    ┌────▼────┐
-    │  STORY  │  ← writes story
-    │ WRITER  │
-    └────┬────┘
-         │
-    ┌────▼────┐
-    │  IMAGE  │  ← distills prompt
-    │  PROMPT │     + generates image
-    └────┬────┘
-         │
-       END
-```
-    """)
-    st.markdown("---")
-    st.markdown("**Models used**")
-    st.markdown("- LLM: `llama3.2` (Ollama)")
-    st.markdown("- Image: `pollinations.ai` (free)")
 
 # ── MAIN INPUT ────────────────────────────────────────────────────────────────
 col1, col2 = st.columns([2, 1])
