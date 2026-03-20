@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Story Teller — Multi-Agent System
 
 A LangGraph-based multi-agent storytelling pipeline.
@@ -50,3 +51,6 @@ In `agents.py`, find `image_generator_node` and replace the Pollinations URL wit
 - **Gemini Flash 2.0** (free tier): use `google-generativeai` SDK
 - **DALL-E 3**: use `openai` SDK
 - **Stable Diffusion**: use `diffusers` or Replicate API
+=======
+# Agent-NTI
+>>>>>>> 32d0f63b31042717407e89f5d360ab8b7785e767
